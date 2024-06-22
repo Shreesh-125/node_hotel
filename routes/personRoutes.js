@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
       console.log("Data fetched");
       res.status(200).json(data);
     } catch (error) {
-      console.log("Error while fetching data", err);
+      console.log("Error while fetching data", error);
       res.status(500).json({ error: "Internal Server Error" });
     }
   });
