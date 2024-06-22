@@ -57,7 +57,7 @@ router.post("/", async (req, res) => {
       const menuItemId=req.params.id;
 
       const response= MenuItem.findByIdAndDelete(menuItemId);
-      
+
       if(!response){
         return res.status(404).json({error:"MenuItem Not Found"});
     }
