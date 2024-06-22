@@ -1,3 +1,4 @@
 # Ignore node_module direcory
 node_modules/
 libraries.txt
+.env
